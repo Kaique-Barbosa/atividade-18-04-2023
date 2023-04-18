@@ -1,0 +1,59 @@
+Algoritmo  "prefeitura"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Almeida Barbosa
+// Data atual  : 18/04/2023
+
+//prefeitura
+//de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o
+//salário e número de filhos. A prefeitura deseja saber:
+//a) total de famílias que responderam a pesquisa;
+//b)média do salário da população;
+//c) média do número de filhos;
+//d) maior salário;
+//e) menor salário.
+//O final da leitura de dados se dará com a entrada de um salário negativo.
+//(Use o comando ENQUANTO-FAÇA)
+
+Var
+contSalario, quantSalario, maiorSalario, menorSalario, mediaSalario, mediaFilhos: real
+quantFilhos, contFilhos,  totalFamilia: inteiro
+Inicio
+
+//quantSalario <- 0
+
+
+
+enquanto quantSalario >= 0  faca
+   escreval("Digite o valor do seu salário mensal")
+   leia(quantSalario)
+   
+   escreval("Digite a quantidade de filhos que tens: ")
+   leia(quantFilhos)
+
+   totalFamilia <- (totalFamilia + 1)
+   contSalario <- (contSalario + quantSalario)
+   contFilhos <- (contFilhos + quantFilhos)
+
+   se quantSalario > maiorSalario  entao
+       maiorSalario <- quantSalario
+   senao
+       menorSalario <- quantSalario
+   fimse
+
+   limpatela
+fimenquanto
+
+
+  mediaFilhos <- (contFilhos / totalFamilia)
+
+  mediaSalario  <- (contSalario / totalFamilia)
+
+  escreval("O total de familias foram: ", totalFamilia)
+  escreval("A media de salário foi: ", mediaSalario)
+  escreval("A media do número de filhos foram: ", mediaFilhos)
+  escreval("O maior salário obtido foi: ", maiorSalario)
+  escreval("O menor salário obtido foi: ", menorSalario)
+
+Fimalgoritmo
