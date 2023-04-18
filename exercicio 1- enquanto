@@ -26,34 +26,35 @@ Inicio
 
 
 enquanto quantSalario >= 0  faca
+
    escreval("Digite o valor do seu salário mensal")
    leia(quantSalario)
-   
-   escreval("Digite a quantidade de filhos que tens: ")
-   leia(quantFilhos)
 
-   totalFamilia <- (totalFamilia + 1)
-   contSalario <- (contSalario + quantSalario)
-   contFilhos <- (contFilhos + quantFilhos)
+se quantSalario >=0 entao
+      escreval("Digite a quantidade de filhos que tens: ")
+      leia(quantFilhos)
 
-   se quantSalario > maiorSalario  entao
-       maiorSalario <- quantSalario
-   senao
-       menorSalario <- quantSalario
-   fimse
+      totalFamilia <- (totalFamilia + 1)
+      contSalario <- (contSalario + quantSalario)
+      contFilhos <- (contFilhos + quantFilhos)
 
-   limpatela
+      se quantSalario > maiorSalario  entao
+          maiorSalario <- quantSalario
+      senao
+          menorSalario <- quantSalario
+      fimse
+
+      limpatela
+    senao
+       mediaFilhos <- (contFilhos / totalFamilia)
+
+     mediaSalario  <- (contSalario / totalFamilia)
+
+     escreval("O total de familias foram: ", totalFamilia)
+     escreval("A media de salário foi: ", mediaSalario)
+     escreval("A media do número de filhos foram: ", mediaFilhos)
+     escreval("O maior salário obtido foi: ", maiorSalario)
+     escreval("O menor salário obtido foi: ", menorSalario)
+fimse
 fimenquanto
-
-
-  mediaFilhos <- (contFilhos / totalFamilia)
-
-  mediaSalario  <- (contSalario / totalFamilia)
-
-  escreval("O total de familias foram: ", totalFamilia)
-  escreval("A media de salário foi: ", mediaSalario)
-  escreval("A media do número de filhos foram: ", mediaFilhos)
-  escreval("O maior salário obtido foi: ", maiorSalario)
-  escreval("O menor salário obtido foi: ", menorSalario)
-
 Fimalgoritmo
