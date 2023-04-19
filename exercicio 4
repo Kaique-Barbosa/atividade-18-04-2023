@@ -1,0 +1,83 @@
+Algoritmo "H/M"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Almeida
+// Data atual  : 18/04/2023
+
+Var
+sexo: caracter
+idade, maiorIdadeF, menorIdadeF, maiorIdadeM, menorIdadeM: inteiro
+salario,contSalarioF, SalarioTotalF, mediaSalarioF: real
+contSalarioM, SalarioTotalM, mediaSalarioM: real
+ContM_salario: real
+
+
+Inicio
+
+
+repita
+      escreval("Digite sua idade")
+      leia(idade)
+      
+se idade > 0 entao
+      escreval("Digite seu sexo: M ou F")
+      leia(sexo)
+
+      escreval("Digite seu salário mensal")
+      leia(salario)
+      
+      se sexo = "F" entao
+       // SALARIOS
+          contSalarioF  <-  contSalarioF + 1
+          SalarioTotalF <-   SalarioTotalF + salario
+          mediaSalarioF <-  SalarioTotalF / contSalarioF
+
+       // IDADE MAIOR E MENOR
+          se idade >= maiorIdadeF entao
+             maiorIdadeF <- idade
+          senao
+             menorIdadeF <- idade
+             //se menorIdadeF = 0 entao
+              //  menorIdadeF <-  maiorIdadeF
+            // fimse
+          fimse
+      fimse
+
+      se sexo = "M" entao
+         // SALARIOS
+          contSalarioM  <-  contSalarioM + 1
+          SalarioTotalM <-   SalarioTotalM + salario
+          mediaSalarioM <-  SalarioTotalM / contSalarioM
+
+          // IDADE MAIOR E MENOR
+          se idade >= maiorIdadeM entao
+             maiorIdadeM <- idade
+          senao
+             menorIdadeM <- idade
+          fimse
+      fimse
+
+        //quantidade de mulheres com salário até R$ 1.000,00.
+
+        se (sexo = "F") e (salario <= 1000) entao
+           ContM_salario <-  ContM_salario + 1
+        fimse
+
+     limpatela
+  
+senao
+  escreval("Media do salario F: ", mediaSalarioF)
+   escreval("Media do salario M: ", mediaSalarioM)
+   escreval("Maior idade das mulheres: ",maiorIdadeF)
+   escreval("Menor idade das mulheres: ",menorIdadeF)
+   escreval("Maior idade dos homens: ", maiorIdadeM)
+   escreval("Maior idade dos homens: ", menorIdadeM)
+   escreval("quantidade de M com salário até R$ 1.000,00 : ", )
+fimse
+ate  idade < 0
+      
+
+      
+
+Fimalgoritmo
