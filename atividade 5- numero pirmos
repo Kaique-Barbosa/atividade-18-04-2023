@@ -1,0 +1,42 @@
+Algoritmo "5º"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique
+// Data atual  : 18/04/2023
+//5. Faça
+//um programa que leia um número informado pelo usuário e
+//mostre na tela os números
+//primos.
+
+
+// OBS: eliminar os divisiveis por 2,
+//e eliminar os multiplos de 3, 5 e 7
+
+Var
+resposta: caracter
+numero: real
+  
+Inicio
+
+  resposta <- "sim"
+
+enquanto resposta = "sim" faca
+
+      escreval("Digite um numero")
+      leia(numero)
+      limpatela
+      escreval("Deseja digitar outro numero?")
+      leia(resposta)
+      
+     se (numero mod 2 = 0) e ((numero * 3) mod 1 = 1 ) e ((numero * 5) mod 1 = 1 ) e ((numero * 7) mod 1 = 1 )   entao
+      escreval("Não há numero primos")
+     senao
+      escreval("Os numero primos são: ", numero)
+     fimse
+     
+fimenquanto
+
+// SIMCOMPLETA***********
+
+Fimalgoritmo
