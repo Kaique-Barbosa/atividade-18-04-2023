@@ -1,0 +1,39 @@
+Algoritmo "Par/impar"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Almeida
+// Data atual  : 18/04/2023
+Var
+contGeral: inteiro
+valor, par, impar, mediaPar, mediaGegal, contPar: real
+Inicio
+
+repita
+      escreval("Digite um numero")
+      leia(valor)
+      
+     // CONTADOR GERAL DE VEZES QUE FOI REPETIDO
+      contGeral <- contGeral + 1
+      
+     // DECISAO DE IMPAR E PAR + ARMAZENAGEM DA SOMA
+      se valor % 2 = 0 entao
+        par <- par + valor
+        contPar <- contPar + 1
+      senao
+        impar <- impar + valor
+      fimse
+      
+     // MEDIA GERAL E MEDIA DOS NUMEROS PARES
+      mediaPar <-  par / contPar
+      mediaGegal <-  (par + impar) /  contGeral
+     limpatela
+ate valor = 0
+
+
+     // MOSTRANDO VALORES NA TELA
+     escreval("A quanidade de numeros foi: ", par," Pares. "," , ", impar," impares." )
+     escreval("média de valores pares: ",mediaPar)
+     escreval("média geral dos números lidos: ",mediaGegal)
+
+Fimalgoritmo
