@@ -1,0 +1,46 @@
+Algoritmo "exercicio 3 - 25/04"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Barbosa
+// Data atual  : 25/04/2023
+Var
+
+i:inteiro
+soma, media:real
+nota: vetor[1..5] de real
+maiorNumero, menorNumero: real
+Inicio
+
+//menorNumero <- 999999
+para i de 1 ate 5 faca
+   escreval("Digite uma nota")
+    leia(nota[i])
+    soma <- soma + nota[i]
+   limpatela
+
+   // se nota[i] < menorNumero entao
+   //    menorNumero <-  nota[i]
+   // fimse
+
+  //  se nota[i] > maiorNumero entao
+   //   maiorNumero <-  nota[i]
+   // fimse
+    
+     se (nota[i] > maiorNumero) entao
+        maiorNumero <- nota[i]
+        
+           se (menorNumero = 0) e (menorNumero < maiorNumero) entao
+             menorNumero <- nota[i]
+           fimse
+           
+     senao
+        menorNumero <- nota[i]
+     fimse
+
+        escreval("A maior nota foi: ", maiorNumero)
+        escreval("A menor nota foi: ", menorNumero)
+fimpara
+
+
+Fimalgoritmo
