@@ -1,0 +1,31 @@
+Algoritmo "exercicio 25/04"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Barbosa
+// Data atual  : 25/04/2023
+
+//ler 3 notas em vetor e calcular a media aritim,etica
+//mostrar as 3 notas
+
+Var
+i:inteiro
+nota: vetor[1..3] de real
+soma, media: real
+Inicio
+
+para i de 1 ate 3 faca
+   escreval("Digite uma nota")
+    leia(nota[i])
+    soma <- soma + nota[i]
+    limpatela
+fimpara
+
+   media <- soma / i
+   
+   para i de 1 ate 3 faca
+      escreval("A suas notas foram: ", i ,"º", " nota: ",nota[i])
+   fimpara
+   
+     escreval("A media das notas foram: ", media)
+Fimalgoritmo
