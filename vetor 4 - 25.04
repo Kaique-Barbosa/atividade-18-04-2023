@@ -1,1 +1,30 @@
+Algoritmo "atividade 3"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Kaique Barbosa
+// Data atual  : 25/04/2023
+Var
+vet:vetor [1..6] de inteiro
 
+par, impar, contPar, contImpar, i :inteiro
+
+Inicio
+
+
+   para i de 1 ate 6 faca
+        escreval("Digite um numero: ")
+        leia(vet[i])
+        
+        se (vet[i] mod 2 = 0) entao
+           par <- vet[i]
+           contPar <- contPar + 1
+        senao
+           impar <- vet[i]
+           contImpar <- contImpar + 1
+        fimse
+   fimpara
+
+   escreval("Os numero pares são: ", contPar)
+   escreval("Os numero impares são: ", contImpar)
+Fimalgoritmo
